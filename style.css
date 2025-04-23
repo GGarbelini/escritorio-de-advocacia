@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e2e8f0;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(5, 5, 5, 0.892);
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+
+}
+
+.logo {
+    width: 130px;
+    margin-left: 100px;
+    padding: 2px;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    gap: 4rem;
+    padding: 10px;
+    margin-right: 35px;
+    font-size: 1.2rem;
+
+}
+
+.li-headear {
+    list-style: none;
+}
+
+.menu-link {
+    color: azure;
+    text-decoration: none;
+}
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+}
+
+.imagem-de-fundo {
+    min-width: 100%;    
+    opacity: 80%;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+h1 {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: #a59034;
+    margin: 40px;
+}
+
+.fale-conosco {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(90deg, rgba(171, 151, 62, 1) 100%, rgba(245, 214, 76, 1) 0%, rgba(235, 198, 14, 1) 53%);
+    color: white;
+    font-size: 1.2rem;
+    padding: auto;
+    cursor: pointer;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.escritorio {
+    margin-left: 30px;
+    padding: 20px;
+    width: 45%;
+}
+
+.titulo-escritorio {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #88782d;
+    padding-bottom: 30px;
+}
+
+.texto-escritorio {
+    text-align: justify;
+}
+
+.aside-escritorio {
+    display: flex;
+    float: right;
+    margin-right: 30px;
+    width: 40%;
+}
+
+.img-escritorio {
+    width: 200px;
+    margin: 30px;
+    border-radius: 50%;
+    gap: 2rem;
+}
+
+
+.container-equipe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.aside-equipe {
+    display: flex;
+    float: right;
+    margin-right:3rem;
+    width: 40%;
+}
+
+.socia {
+    width:300px;
+    height: 300px;
+    margin-left: 110px;
+    border-radius: 30%;
+    border: 4px solid #88782d;
+}
+
+.section-equipe {
+    margin-left: 30px;
+    margin-right: 50px;
+    padding: 20px;
+    width: 50%;
+    
+}
+
+.texto-socia {
+    text-align: justify;
+}
+.area-de-atuacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-between;
+    margin-top: 100px;
+    line-height: 2rem;
+    margin: 120px 0 0 100px;
+    padding: 20px;
+}
+
+.fachada {
+    width: 400px;
+    border-radius: 50%;
+    margin-right: 180px;
+}
+
+.areas {
+    margin-left: 3rem;
+}
+
+.contatos-titulo{
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #88782d;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+
+}
+
+.campo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: black;
+    border: 1 px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+
+}
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+
+}
+
+.campo-form:focus {
+    border-color: var(--secundaria);
+    box-shadow: 0 0 10px #88782d;
+}
+
+.botao-form {
+    color: #e2e8f0;
+    background: linear-gradient(45deg, #7f7650, #88782d);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+    font-size: 1.3rem;
+}
+
+.botao-form:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #7f7650;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;    
+    background-color: rgba(5, 5, 5, 0.892);
+    width: 100%;
+    padding: 20px;
+    color: #e2e8f0;
+}

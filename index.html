@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/jc.ico">
+    <title>JC Advogados</title>
+  </head>
+  <body>
+    <nav class="navegacao">
+      <img src="./img/Logotipo.png" alt="logo escritório" class="logo" />
+      <ul class="menu">
+        <li class="li-headear">
+          <a href="#escritorio" class="menu-link"> O escritório</a>
+        </li>
+        <li class="li-headear">
+          <a href="#equipe" class="menu-link">Equipe</a>
+        </li>
+        <li class="li-headear">
+          <a href="#atuacao" class="menu-link">Áreas de Atuação</a>
+        </li>
+        <li class="li-headear">
+          <a href="#contatos" class="menu-link">Contatos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <img
+        src="./img/imagem fundo.png"
+        alt="Imagem de fundo"
+        class="imagem-de-fundo"
+      />
+      <div class="titulo">
+        <h1>
+          Soluções Jurídicas Seguras e <br />
+          Eficiente para seu negócio!
+        </h1>
+        <button class="fale-conosco" href="#fale-conosco" >Fale conosco</button>
+      </div>
+    </main>
+    <div class="container">
+      <section class="escritorio">
+        <h2 class="titulo-escritorio" id="escritorio">O Escritório</h2>
+        <p class="texto-escritorio">
+          O escritório <b>Joyce Cordeiro Advogados</b> tem como propósito
+          utilizar a expertise jurídica para trazer segurança e resultado na
+          tomada de decisões e na resolução de demandas empresariais, tendo como
+          dois grandes pilares a transparência e a confiabilidade.
+          <br />
+          <br />
+          Contamos com atuação judicial e extrajudicial, especialmente nas áreas
+          de direito tributário, imobiliário e empresarial.
+          <br />
+          <br />
+          Com sólida atuação nos campos de assessoria e consultoria, em
+          especial, à pessoas jurídicas, o nosso escritório é fruto da expertise
+          adquirida ao longo dos anos com o atendimento à empresas dos mais
+          variados segmentos, a exemplo de fundos de investimento estrangeiro;
+          Empresas multinacionais e nacionais do setor energético,
+          especializadas na geração e distribuição de energia através de fontes
+          renováveis; Empresas dos setores de varejo, construção civil,
+          telecomunicações, transporte público, hotelaria, clínicas médicas,
+          além de diversos outros ramos do segmento de prestação de serviços.
+        </p>
+      </section>
+
+      <aside class="aside-escritorio">
+        <img
+          src="./img/escritório 1.jpg"
+          alt="escritorio"
+          class="img-escritorio"
+        />
+        <img
+          src="./img/escritorio 2.jpg"
+          alt=" escritorio2"
+          class="img-escritorio"
+        />
+      </aside>
+    </div>
+
+    <div class="container-equipe">
+      <aside class="aside-equipe">
+        <img src="./img/socia 2.png" alt="Joyce" class="socia"/>
+      </aside>
+      <section class="section-equipe">
+        <h2 class="titulo-escritorio" id="equipe">Equipe</h2>
+        <p class="texto-socia"> <b>Joyce Cordeiro</b>, advogada, sócia fundadora do escritório Joyce Cordeiro Advogados, especialista em direito Empresarial. 
+            <br>
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, corporis quibusdam optio laboriosam blanditiis aut numquam ducimus cumque laudantium, nihil itaque accusantium pariatur in repudiandae consequatur quod perferendis molestias et.
+      </section>
+    </div>
+
+    <section class="area-de-atuacao" id="atuacao">
+        <div>
+            <h2 class="titulo-escritorio">Áreas de Atuação</h2>
+            <ul class="areas">
+                <li>Direito Empresarial</li>
+                <li>Direito Societário</li>
+                <li>Tributário</li>
+                <li>Nacionalidade Portuguesa</li>
+            </ul>
+        </div>
+            <img src="./img/fachada.png" alt="fachada " class="fachada">
+
+    </section>
+
+    <section id="contatos"  class="sobre">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form 
+            class="formulario-contato"
+            id="formulario"
+            onsubmit="enviarWhats(event)"
+        >
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome" />
+          </div>
+
+          <div class="grupo-form">
+            <textarea
+              class="campo-form"
+              placeholder="Envie sua mensagem que nossa equipe entrará em contato. Obrigada!"
+              rows="6"
+              id="mensagem"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <p>
+            Avenida Paulista, 2351, sala 44
+        </p>
+        <p>
+            (11) 3284-5576
+        </p>
+        <p>
+            WhatsApp (11) 99478-5438
+        </p>
+    </footer>
+
+    <script>
+        function enviarWhats(event) {
+          event.preventDefault()
+          const nome = document.getElementById("nome").value;
+          const mensagem = document.getElementById("mensagem").value;
+          const telefone = "351938206572";
+          const texto = `Olá! me chamo ${nome}, ${mensagem}`;
+          const msgFormatada = encodeURIComponent(texto);
+          const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+          console.log(url)
+          window.open(url, "_blank");
+        }
+    </script>
+  </body>
+
+
+</html>
